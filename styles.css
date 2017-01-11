@@ -221,28 +221,18 @@ div {
 }
 
 .itsp-wear-band-text {
-  max-width: 800px;
-  margin-left: 25%;
+  max-width: 500px;
+  margin: auto;
   padding: 24px;
-  text-align: left;
+  text-align: center;
   color: white;
 }
 .itsp-wear-band-text p {
   padding-top: 8px;
 }
-.itsp-wear-band-text {
-  margin-left: 0;
-  padding: 16px;
-}
+
 @media (max-width: 900px)
 .itsp-wear-band-text {
-    margin-left: 0;
+    margin-left: auto;
     padding: 16px;
-}
-.itsp-wear-band-text {
-    max-width: 800px;
-    margin-left: 25%;
-    padding: 24px;
-    text-align: left;
-    color: white;
 }
