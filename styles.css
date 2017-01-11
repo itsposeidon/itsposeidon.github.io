@@ -186,6 +186,7 @@ div {
 .itsp-card
 {
   margin: 1em auto;
+  min-width: 270px;
 }
 .titleCard
 {
@@ -199,7 +200,7 @@ div {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding: 80px 16px 0 16px;
+  padding: 3em 16px 0 16px;
 }
 .itsp-customized-section-image {
   background: url('images/devices.jpg') center top no-repeat;
@@ -217,9 +218,8 @@ div {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #37474f;
+  background-color: #006994;
 }
-
 .itsp-wear-band-text {
   max-width: 500px;
   margin: auto;
@@ -230,9 +230,24 @@ div {
 .itsp-wear-band-text p {
   padding-top: 8px;
 }
-
+.itsp-space {
+  height: 3em;
+}
+.itsp-wear-footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #006994;
+  color:white;
+  padding: 3em 0em;
+}
 @media (max-width: 900px)
 .itsp-wear-band-text {
     margin-left: auto;
     padding: 16px;
+}
+.mdl-mega-footer
+{
+  text-align: center;
+  color: white;
 }
