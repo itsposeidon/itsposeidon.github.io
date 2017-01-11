@@ -1,7 +1,7 @@
 
 .portfolio-header {
   position: relative;
-  background-image: url(images/header-bg.jpg);
+  background: white;
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -187,6 +187,7 @@ div {
 {
   margin: 1em auto;
   min-width: 270px;
+  text-align: center;
 }
 .titleCard
 {
@@ -223,9 +224,12 @@ div {
 .itsp-wear-band-text {
   max-width: 500px;
   margin: auto;
-  padding: 24px;
+  padding: 4em;
   text-align: center;
   color: white;
+}
+.itsp-grid {
+  padding: 4em 0em;
 }
 .itsp-wear-band-text p {
   padding-top: 8px;
@@ -239,13 +243,18 @@ div {
   text-align: center;
   background-color: #006994;
   color:white;
-  padding: 3em 0em;
+  font-size: 18px;
+  padding: 10em 0em;
+  line-height: 30px;
 }
 @media (max-width: 900px)
 .itsp-wear-band-text {
     margin-left: auto;
     padding: 16px;
 }
+
+.material-icons.md-48 { font-size: 48px; }
+
 .mdl-mega-footer
 {
   text-align: center;
