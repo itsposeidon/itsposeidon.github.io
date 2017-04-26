@@ -1,0 +1,100 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.center {
+  height:inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner {
+  height: 100vh;
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000046, rgb(79, 115, 179));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000046, rgb(79, 115, 179)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  background-color: black;
+}
+
+.banner img {
+  max-height: 33%;
+}
+
+.banner-label {
+  font-size: 5rem;
+  margin-top: 2rem;
+}
+
+.blue {
+  color: blue;
+}
+
+.white {
+  color: white;
+}
+
+.bgred {
+  background: red;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  margin: 4rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.about-us {
+  background: #46ceff; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #46ceff 0%, #46cece 32%, #207cca 68%, #207cca 68%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #46ceff 0%,#46cece 32%,#207cca 68%,#207cca 68%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #46ceff 0%,#46cece 32%,#207cca 68%,#207cca 68%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46ceff', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.about-section-header {
+  margin-bottom: 0px;
+}
+
+.about-row {
+  height: 55vh;
+}
+
+.about-text {
+  padding: 0px 3rem;
+}
+
+.about-header {
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.about-description {
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+.about-image-container {
+  opacity: 0;
+}
+
+.about-image {
+  background-color: pink;
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+}

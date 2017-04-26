@@ -1,0 +1,132 @@
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>itsposeidon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="icon" 
+  type="image/png" 
+  href="images/favicon.png" />
+
+  <script>
+
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top + 100
+            }, 1000);
+            return false;
+          }
+        }
+      });
+
+      
+    });
+
+    $(window).scroll(function() {
+
+    var percent = ($(window).scrollTop() / $(window).height());
+
+
+    var valBlur = Math.ceil( percent * 20 )
+
+    $("#poseidon").css({
+      "-webkit-filter": "blur(" + valBlur + "px)", 
+      "-moz-filter": "blur(" + valBlur + "px)", 
+      "-o-filter": "blur(" + valBlur + "px)", 
+      "-ms-filter": "blur(" + valBlur + "px)",
+      "filter": "blur(" + valBlur + "px)"
+      });
+
+    $("#arrow").css({
+      "top": (60 + (percent * 210)) + "vh"
+      });
+
+});
+
+  </script>
+</head>
+<body>   
+
+<div id="poseidon">
+  P O S E I D O N
+</div>
+
+<div id="arrow">
+  v<br>
+  |<br>
+  _<br>
+  ?
+</div>
+
+
+<div id="section1" class="container-fluid">
+
+  <span class="quote"> "You don't have to share it, but it would be cool if you did." </span>
+
+</div>
+
+<div id="section2" class="container-fluid">
+  <div class="row">
+    <a href="#section2" class="button">Who We Are?</a>
+    <a href="#section3" class="button">What We Do?</a>
+  </div>
+  <div class="awesome-info"> 
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1">
+        asd
+      </div>
+      <div class="col-sm-5 col-sm-offset-1">
+        we are a lighthouse of innovation in a seas of tradition
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1">
+        we are the sales that catch the winds of change
+      </div>
+      <div class="col-sm-5 col-sm-offset-1">
+        dsa
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1">
+        asd
+      </div>
+      <div class="col-sm-5 col-sm-offset-1">
+        dsa
+      </div>
+    </div>
+  </div>
+
+</div>
+<div id="section3" class="container-fluid">
+
+
+</div>
+<section id="section4" class="container-fluid">
+  <h1>Section 4</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</section>
+<div id="section5" class="container-fluid">
+
+<span class="hello">Say Hello!</span>
+contact@itsposeidon.com<br>
++63 (915) 108-2333<br>
+
+</div>
+
+</body>
+</html>
