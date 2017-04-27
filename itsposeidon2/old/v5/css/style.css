@@ -8,6 +8,11 @@ body,
 html {
     width: 100%;
     height: 100%;
+    color: white;
+}
+
+a {
+    color: orange;
 }
 
 body,
@@ -19,32 +24,43 @@ h5,
 h6 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 4px;
+}
+
+div.gradient {
+
+    /* IE10+ */ 
+    background-image: -ms-linear-gradient(top, #ECEFF1 0%, #90CAF9 15%, #2196F3 33%, #0D47A1 60%, #0D47A1 80%, #263238 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #ECEFF1 0%, #90CAF9 15%, #2196F3 33%, #0D47A1 60%, #0D47A1 80%, #263238 100%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #ECEFF1 0%, #90CAF9 15%, #2196F3 33%, #0D47A1 60%, #0D47A1 80%, #263238 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ECEFF1), color-stop(15, #90CAF9), color-stop(33, #2196F3), color-stop(60, #0D47A1), color-stop(80, #0D47A1), color-stop(100, #263238));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #ECEFF1 0%, #90CAF9 15%, #2196F3 33%, #0D47A1 60%, #0D47A1 80%, #263238 100%);
+
+    /* W3C Markup */ 
+    background-image: linear-gradient(to bottom, #ECEFF1 0%, #90CAF9 15%, #2196F3 33%, #0D47A1 60%, #0D47A1 80%, #263238 100%);
 }
 
 #poseidon {
     position: fixed;
     color: #0D47A1 !important;
-    z-index: -5;
+    z-index: 0;
 }
 
 #top {
-    /* IE10+ */ 
-    background-image: -ms-linear-gradient(top left, #FFEB3B 0%, #F44336 100%);
-    /* Mozilla Firefox */ 
-    background-image: -moz-linear-gradient(top left, #FFEB3B 0%, #F44336 100%);
-    /* Opera */ 
-    background-image: -o-linear-gradient(top left, #FFEB3B 0%, #F44336 100%);
-    /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFEB3B), color-stop(100, #F44336));
-    /* Webkit (Chrome 11+) */ 
-    background-image: -webkit-linear-gradient(top left, #FFEB3B 0%, #F44336 100%);
-    /* W3C Markup */ 
-    background-image: linear-gradient(to bottom right, #FFEB3B 0%, #F44336 100%);
+    /*background: url(../img/logoTransWhite.png) no-repeat center center;*/
 }
 
 .container {
     /*height: 100vh;*/
-    background: url(../img/github_octocat.png) no-repeat center center;
 }
 
 .topnav {
@@ -57,8 +73,6 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
     background: url(../img/intro-bg.jpg) no-repeat center center;
@@ -67,8 +81,6 @@ h6 {
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
 }
 
 .intro-message > h1 {
@@ -125,16 +137,22 @@ h6 {
 
 .content-section-b {
     padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
+    /*border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;*/
 }
 
 .section-heading {
     margin-bottom: 30px;
 }
 
-.section-heading-spacer {
+.section-heading-left {
     float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading-right {
+    float: right;
     width: 200px;
     border-top: 3px solid #e7e7e7;
 }
@@ -159,10 +177,16 @@ h6 {
     background-size: cover;
 }
 
-.banner h2 {
+.col-lg-5 h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 3em;
+}
+
+.col-lg-5 h3 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 2em;
 }
 
 .banner ul {
@@ -201,7 +225,7 @@ h6 {
 
 footer {
 /*padding: 50px 0;*/
-    background-color: #f8f8f8;
+/*background-color: #f8f8f8;*/
 }
 
 p.copyright {
@@ -245,14 +269,6 @@ p.copyright {
   /* End Custom Button Styles */
   /* Text Vertical Center */
 
-  .text-vertical-center img {
-    max-height: 33%;
-  }
-
-  #img-toggle {
-    max-height: 10%;
-  }
-
   .text-vertical-center {
       display: table-cell;
       text-align: center;
@@ -268,7 +284,7 @@ p.copyright {
   /* End Text Vertical Center */
   /* Header */
 
-  .header {
+  .page-size {
       display: table;
       position: relative;
       width: 100%;
@@ -289,3 +305,12 @@ p.copyright {
     text-align: right;
   }
 /* End Align */
+/*Special Handling*/
+
+.map iframe{
+    pointer-events: none;
+}
+
+.map {
+    z-index: 10;
+}
