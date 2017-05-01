@@ -31,9 +31,12 @@ h6 {
 }
 
 .intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
     background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 .intro-message {
@@ -124,25 +127,25 @@ h2.section-heading {
     border-top: 3px solid #e7e7e7;
 }
 
-  .banner {
-      display: table;
-      position: relative;
-      width: 100%;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover;
+.banner {
+    padding: 100px 0;
+    background-size: cover;
+}
 
-      min-height: 50vh;
-      color: white;
-      background: url("../img/bg-pattern.png"), #263238;
-      /* fallback for old browsers */
-      background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to right, #0D47A1, red);
-      /* Chrome 10-25, Safari 5.1-6 */
-      background: url("../img/bg-pattern.png"), linear-gradient(to right, #0D47A1, red);
-  }
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
 
+.banner ul {
+    margin-bottom: 0;
+}
 
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
 
 @media(max-width:1199px) {
     ul.banner-social-buttons {
@@ -167,6 +170,23 @@ h2.section-heading {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+}
+
+footer {
+    padding: 50px 0;
+    
+    font-weight: 100;
+    color: white;
+    background: #222;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url('../img/bg-cta.jpg');
+    
+    
 }
 
 footer span {
@@ -241,6 +261,16 @@ p.copyright {
       -o-background-size: cover;
   }
 
+  .half-size {
+    min-height: 50vh;
+    width: 100%;
+    display: table;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
 /* Align */
 
@@ -270,10 +300,12 @@ p.copyright {
 
 #logo {
     position: fixed;
-    z-index: 1;
+
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+
+    z-index: 5;
     top: 20px;
     left: 20px;
     background-color: rgba(0,100,255,0.2);
@@ -289,28 +321,12 @@ p.copyright {
     background: linear-gradient(to right, #000046, rgb(79, 115, 179)); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    
-
-    min-height: 100vh;
-    width: 100%;
-
     overflow-y: hidden;
     color: white;
 }
 
-footer {
-    padding: 50px 0;
-    
-    font-weight: 100;
-    color: white;
-    background: #222;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-position: center;
-    background-image: url('../img/bg-cta.jpg');
+.text-vertical-center .col-lg-12 img {
+    margin-bottom: 3em;
 }
 
 span.title {
