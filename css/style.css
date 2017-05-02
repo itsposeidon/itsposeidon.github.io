@@ -145,9 +145,9 @@ h2.section-heading {
       color: white;
       background: url("../img/bg-pattern.png"), #263238;
       /* fallback for old browsers */
-      background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to right, #3F51B5, #F44336);
+      background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #5C6BC0, #EF5350);
       /* Chrome 10-25, Safari 5.1-6 */
-      background: url("../img/bg-pattern.png"), linear-gradient(to right, #3F51B5, #F44336);
+      background: url("../img/bg-pattern.png"), linear-gradient(to left, #5C6BC0, #EF5350);
   }
 
 
@@ -243,6 +243,24 @@ p.copyright {
       font-weight: 700;
       text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   }
+
+/*responsive text*/
+
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+    .text-vertical-center h1 {
+        font-size: 6em;
+    }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    .text-vertical-center h1 {
+        font-size: 4.5em;
+        }
+    }
+@media all and (max-width: 500px) { /* screen size until 500px */
+    .text-vertical-center h1 {
+        font-size: 4em;
+        }
+    }
 
   /* End Text Vertical Center */
   /* Header */
