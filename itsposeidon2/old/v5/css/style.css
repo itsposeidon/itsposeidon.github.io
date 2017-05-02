@@ -124,6 +124,13 @@ h2.section-heading {
     border-top: 3px solid #e7e7e7;
 }
 
+.center-heading-spacer {
+    float: center;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+
   .banner {
       display: table;
       position: relative;
@@ -137,9 +144,9 @@ h2.section-heading {
       color: white;
       background: url("../img/bg-pattern.png"), #263238;
       /* fallback for old browsers */
-      background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to right, #0D47A1, red);
+      background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to right, #3F51B5, #F44336);
       /* Chrome 10-25, Safari 5.1-6 */
-      background: url("../img/bg-pattern.png"), linear-gradient(to right, #0D47A1, red);
+      background: url("../img/bg-pattern.png"), linear-gradient(to right, #3F51B5, #F44336);
   }
 
 
@@ -172,6 +179,14 @@ h2.section-heading {
 footer span {
     font-weight: 0;
     font-size: 5em;
+    /*text-shadow: 2px 2px 3px rgba(0,0,100,0.6);*/
+}
+
+footer h3 {
+    font-weight: 0;
+    font-size: 3em;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 3px rgba(0,0,100,0.6);
 }
 
 p.copyright {
@@ -227,6 +242,7 @@ p.copyright {
       font-weight: 700;
       text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   }
+
   /* End Text Vertical Center */
   /* Header */
 
@@ -241,6 +257,21 @@ p.copyright {
       -o-background-size: cover;
   }
 
+  .half-size {
+      display: table;
+      position: relative;
+
+      width: 100%;
+
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+  }
+
+  .half-size h2 {
+      text-align: center;
+  }
 
 /* Align */
 
@@ -299,8 +330,6 @@ p.copyright {
 }
 
 footer {
-    padding: 50px 0;
-    
     font-weight: 100;
     color: white;
     background: #222;
@@ -311,6 +340,10 @@ footer {
     -o-background-size: cover;
     background-position: center;
     background-image: url('../img/bg-cta.jpg');
+}
+
+.shade-blue {
+    background-color: rgba(0,0,100,0.3);
 }
 
 span.title {
