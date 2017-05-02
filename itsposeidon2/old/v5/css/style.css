@@ -141,6 +141,7 @@ h2.section-heading {
       -o-background-size: cover;
 
       min-height: 50vh;
+      padding: 3em;
       color: white;
       background: url("../img/bg-pattern.png"), #263238;
       /* fallback for old browsers */
