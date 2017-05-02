@@ -33,7 +33,6 @@ h6 {
 .intro-header {
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
 }
 
 .intro-message {
@@ -190,6 +189,20 @@ footer h3 {
     text-shadow: 2px 2px 3px rgba(0,0,100,0.6);
 }
 
+/*responsive text*/
+
+@media all and (max-width: 500px) { /* screen size until 500px */
+    footer span {
+        font-size: 4em;
+    }
+
+    footer h3 {
+        font-size: 2em;
+    }
+}
+
+
+
 p.copyright {
     margin: 15px 0 0;
 }
@@ -253,12 +266,12 @@ p.copyright {
 }
 @media all and (max-width: 1000px) { /* screen size until 1000px */
     .text-vertical-center h1 {
-        font-size: 4.5em;
+        font-size: 4em;
         }
     }
 @media all and (max-width: 500px) { /* screen size until 500px */
     .text-vertical-center h1 {
-        font-size: 4em;
+        font-size: 3em;
         }
     }
 
@@ -348,6 +361,9 @@ p.copyright {
     color: white;
 }
 
+#top img {
+    margin-bottom: 1.5em;
+}
 footer {
     font-weight: 100;
     color: white;
