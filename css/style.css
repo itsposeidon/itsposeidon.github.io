@@ -17,8 +17,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'Helvetica', 'Arial', sans-serif; 
+    font-weight: 500;
 }
 
 .topnav {
@@ -342,6 +342,18 @@ p.copyright {
     background-color: rgba(0,100,255,0.2);
 }
 
+
+/*responsive text*/
+
+@media all and (max-width: 600px) { /* screen size until 1200px */
+    #logo {
+        top: 20px;
+        left: 20px;
+    }
+}
+
+/* /responsive text*/
+
 #top {
     /*background: url(../img/logoTransWhite.png) no-repeat center center;*/
     z-index: 10;
@@ -395,12 +407,12 @@ span.title {
 }
 @media all and (max-width: 1000px) { /* screen size until 1000px */
     span.title {
-        font-size: 6em;
+        font-size: 5em;
         }
     }
 @media all and (max-width: 500px) { /* screen size until 500px */
     span.title {
-        font-size: 5em;
+        font-size: 4em;
         }
     }
 
