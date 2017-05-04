@@ -332,24 +332,16 @@ p.copyright {
 }
 
 #logo {
-    position: fixed;
     z-index: 1;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    top: 20px;
-    left: 20px;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
     background-color: rgba(0,100,255,0.2);
-}
-
-
-/*responsive text*/
-
-@media all and (max-width: 600px) { /* screen size until 1200px */
-    #logo {
-        top: 20px;
-        left: 20px;
-    }
 }
 
 /* /responsive text*/
@@ -364,8 +356,6 @@ p.copyright {
     background: linear-gradient(to right, #000046, rgb(79, 115, 179)); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    
-
     min-height: 100vh;
     width: 100%;
 
@@ -376,6 +366,7 @@ p.copyright {
 #top img {
     margin-bottom: 1.5em;
 }
+
 footer {
     font-weight: 100;
     color: white;
@@ -423,8 +414,10 @@ span.title {
   margin: 50px auto;
 
   font-size: 18em;
+  
   background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
   background: linear-gradient(to left, #7b4397, #dc2430);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
