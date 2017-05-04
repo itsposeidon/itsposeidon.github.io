@@ -339,7 +339,7 @@ p.copyright {
 
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 20px; 
 
     background-color: rgba(0,100,255,0.2);
 }
