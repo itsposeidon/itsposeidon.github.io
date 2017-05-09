@@ -338,8 +338,8 @@ p.copyright {
     border-radius: 50px;
 
     position: fixed;
-    bottom: 20px;
-    right: 20px; 
+    bottom: 25px;
+    right: 25px; 
 
     background-color: rgba(0,100,255,0.2);
 }
