@@ -144,9 +144,9 @@ h2.section-heading {
       color: white;
       background: url("../img/bg-pattern.png"), #263238;
       /* fallback for old browsers */
-      background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #5C6BC0, #EF5350);
+      background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #3F51B5, #F44336);
       /* Chrome 10-25, Safari 5.1-6 */
-      background: url("../img/bg-pattern.png"), linear-gradient(to left, #5C6BC0, #EF5350);
+      background: url("../img/bg-pattern.png"), linear-gradient(to left, #3F51B5, #F44336);
   }
 
 
@@ -186,7 +186,6 @@ footer h3 {
     font-weight: 0;
     font-size: 3em;
     line-height: 1.5em;
-    text-shadow: 2px 2px 3px rgba(0,0,100,0.6);
 }
 
 /*responsive text*/
@@ -341,7 +340,7 @@ p.copyright {
     bottom: 25px;
     right: 25px; 
 
-    background-color: rgba(0,100,255,0.2);
+    background-color: rgba(0,100,255,0.4);
 }
 
 /* /responsive text*/
@@ -381,7 +380,7 @@ footer {
 }
 
 .shade-blue {
-    background-color: rgba(0,0,100,0.3);
+    background-color: rgba(10,0,100,0.4);
 }
 
 span.title {
@@ -415,8 +414,8 @@ span.title {
 
   font-size: 18em;
   
-  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: linear-gradient(to left, #7b4397, #dc2430);
+  background: -webkit-linear-gradient(to left, #673AB7, #F44336);
+  background: linear-gradient(to left, #673AB7, #F44336);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
